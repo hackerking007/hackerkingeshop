@@ -6,12 +6,17 @@
 
 /* startttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt */
 body {
-  background-color: #F1FAFB;
+
   font-family: "Lato", sans-serif;
   color: #333333;
   font-size: 16px;
   overflow-x: hidden;
   position: relative;
+
+  /* background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url('../assets/bg.jpg');
+
+  background-repeat: no-repeat;
+  background-size: cover; */
 }
 
 header {
@@ -633,6 +638,32 @@ img {
 .right {
   right: 0;
 } */
+section .container-fluid {
+
+  padding: 0px 130px;
+
+}
+
+section .container-fluid .special-section {
+  grid-template-columns: repeat(2, 100px);
+
+
+}
+
+section .container-fluid .special-section .specials a {
+  text-decoration: none;
+
+}
+
+section .container-fluid .special-section .specials img {
+  height: 450px;
+  width: 480px;
+  border: 2px solid #000;
+}
+
+section .container-fluid .special-section .specials img.img-left {
+  margin-right: 150px;
+}
 
 .category-products {
   border: 1px solid #F7F7F0;
@@ -658,7 +689,7 @@ img {
 h2.title:after {
   content: " ";
   position: absolute;
-  border: 1px solid #a6fff2;
+  border: 1px solid #43dde6;
   bottom: 8px;
   left: 0;
   width: 100%;
@@ -733,11 +764,19 @@ h2.title:before {
 }
 
 .aboutinfo h2 {
-  color: #ff6666;
-  font-size: 25px;
-  margin: 0 175px;
-  text-transform: capitalize;
+
+  font-size: 15px;
+  margin: 10px 65px;
+  display: inline-block;
+  text-transform: uppercase;
   font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+
+}
+
+.aboutinfo h2 a {
+  text-decoration: none;
+  color: #ff6666;
 }
 
 .footer-amazon {
@@ -753,24 +792,28 @@ h2.title:before {
 }
 
 .social-links a {
-  height: 35px;
-  width: 35px;
+
   display: inline-block;
-  text-align: center;
-  line-height: 35px;
+  /* text-align: center; */
+  /* line-height: 35px; */
   color: #ffffff;
   margin: 0 5px;
-  border-radius: 50%;
+  /* border-radius: 50%; */
   text-decoration: none;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  font-size: 30px;
+  font-size: 18px;
+}
+
+.social-links .fa-star {
+  font-size: 10px;
+  color: #e2f3f5;
 }
 
 .social-links a:hover {
   color: #ff304f;
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
+  /* -webkit-transform: scale(1.1);
+  transform: scale(1.1); */
 }
 
 .video-gallery {
