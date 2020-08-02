@@ -1065,8 +1065,11 @@ h2.title {
 }
 
 .transparent-box {
-  padding: 0 9px;
-  height: 100%;
+  padding: 0 5px;
+  height: 430px;
+  max-height: 430px;
+  border: 1px solid #F7F7F5;
+  margin-bottom: 5px;
 }
 
 
@@ -1074,15 +1077,23 @@ h2.title {
 .box-inner {
   padding: 30px;
   padding-bottom: 5px;
-  background-color: #f4f4f4;
+  /* background-color: #f4f4f4; */
+  background-color: #fff;
   border-radius: 3%;
+
+
+}
+
+.box-inner img {
+  height: 190px;
+  max-height: 190px;
+
 
 }
 
 
-
 .product-image-wrapper {
-  border: 1px solid #F7F7F5;
+  /* border: 1px solid #F7F7F5; */
   overflow: hidden;
   margin-bottom: 30px;
 }
@@ -1110,6 +1121,22 @@ h2.title {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 24px;
   font-weight: 400;
+}
+
+.productinfo .section-review {
+  text-decoration: none !important;
+  font-size: 14px;
+
+}
+
+.productinfo .review-star {
+  color: #eac100;
+}
+
+.productinfo .review-ratings {
+  text-decoration: none !important;
+  font-size: 14px;
+  color: #000;
 }
 
 .product-overlay h2 {
